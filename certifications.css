@@ -1,0 +1,136 @@
+.grid-container {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 40px;
+    gap: 20px;
+    padding: 10px;
+
+}
+
+
+#credly{
+    color:#0077B6
+}
+
+#credly:hover{
+    font-size:18px;
+    font-weight: bold;
+}
+
+img{
+    width: 80%;
+}
+
+.certi{
+    width: 60%;
+}
+
+.in{
+    width: 80px;
+}
+
+@media(max-width: 850px) {
+    img{
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+details>summary {
+    padding:20px;
+}
+
+
+
+#credly:hover, summary:hover, details[open]>summary{
+    cursor:pointer;
+    color:blueviolet;
+}
+
+.certDescript{
+    width: 90%;
+    margin:auto;
+
+    text-align: center;
+    padding:25px;
+}
+
+
+details{
+    margin: 30px;
+}
+
+.additional{
+    margin-bottom:100px;
+}
+
+#empty{
+    height: 400px;
+}
+
+:root{
+    --height: 250px;
+    --speed: 20s;
+}
+
+.tickerTape{
+    display: flex;
+    width: 100%;
+    height: var(--height);
+    padding-left: 0;
+    position:fixed;
+    bottom: 0;
+    /*overflow-x: hidden;*/
+    
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-name: ticker;
+    animation-duration: var(--speed);
+}
+
+.ticker{
+    
+    height: var(--height);
+    line-height: var(--height);
+    white-space: nowrap;
+    padding-right: 100%;
+
+}
+
+.tickerItem{
+    display: inline-block;
+
+}
+
+.tickerItem>img{
+    width:200px;
+    height: auto;
+}
+
+@keyframes ticker {
+    0%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+
+#back{
+    z-index: -1;
+    height: 500px;
+    position: fixed;
+    background-color: #0077B6;
+}
+
+summary{
+    color:#0077B6;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}

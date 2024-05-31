@@ -1,0 +1,103 @@
+.slidesContainer{
+    width: 100%;
+    padding: 20px;
+}
+
+.slides{
+    width: 40%;
+    margin:auto;
+    min-width: 200px;
+    margin-bottom:0px;
+
+}
+
+figcaption{
+    text-align: center;
+    font-size: 4vw;
+}
+
+.in{
+    width: 80px;
+}
+
+section{
+    border-radius: 5px;
+    width: 70%;
+    margin:auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h2{
+    color:#0077B6;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+p{
+    font-size: 1rem;
+    text-align: justify;
+    padding:10px;
+    height: 100%;
+    margin-top: 10%
+}
+
+#back{
+    z-index: -1;
+    height: 300px;
+    position: fixed;
+    background-color: #0077B6;
+} 
+
+#empty{
+    height: 300px;
+}
+
+#OA{
+    text-align: justify;
+    padding:10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+
+}
+
+hr{
+    width:90%;
+    margin: auto;
+    box-shadow: gray 1px 1px 1px;
+}
+
+#gold{
+    height:100%;
+    margin-top: 60px;
+}
+
+@media (max-width: 900px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    p{
+        text-align: left;
+    }
+    #OA{
+        text-align: left;
+    }
+}
+
+
+@media(max-width:850px){
+    #gold{
+        margin-top:40px;
+    }
+}
+#skills{
+    width: 40%;
+    float:left;
+}
+
